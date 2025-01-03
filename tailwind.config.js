@@ -6,17 +6,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        bg: '#',
-        bg2: '#',
-        fg: '#',
-        bdr: '#',
-        hvr: '#'
+        bg: '#321A28',
+        bg2: '#5A163E',
+        fg: '#774561',
+        bdr: '#240F1C',
+        hvr: '#87406A'
       }
     },
     fontFamily: {
-      
+      craftyGirls: ["Crafty Girls"],
     }
   },
   plugins: [],
 }
-

@@ -2,11 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {}
+@font-face {
+  font-family: "Crafty Girls";
+  src: url("../public/fonts/Crafty_Girls/CraftyGirls-Regular.ttf");
+}
 
-:root {}
+:root {
+  --bg: #321A28;
+  --bg2: #5A163E;
+  --bdr: #240F1C;
+  --hvr: #87406A;
+  --fg: #774561;
+  --shadow: black;
+}
 
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  letter-spacing: 0.1em;
+  word-spacing: 0.1em;
+  background: linear-gradient(
+    145deg,
+    var(--bg),
+    var(--bg2),
+    var(--bg)
+  );
 }
