@@ -1,0 +1,110 @@
+.crafty-girls-regular {
+  font-family: "Crafty Girls", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --bg: #321A28;
+  --bg2: #5A163E;
+  --bdr: #240F1C;
+  --hvr: #87406A;
+  --fg: #633951;
+  --shadow: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  letter-spacing: 0.1em;
+  word-spacing: 0.1em;
+  background: linear-gradient(
+    145deg,
+    var(--bg),
+    var(--bg2),
+    var(--bg)
+  );
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid var(--bdr);
+}
+
+header > .left,
+header > .middle,
+header > .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%
+}
+
+.app-image,
+.body-container,
+.exit-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 2rem auto;
+}
+
+#title,
+#titleSm,
+#body-text,
+#exit-button {
+  font-weight: bold;
+  font-style: italic;
+  color: var(--fg);
+  width: 100%;
+  text-align: center;
+}
+
+#title {
+  font-size: 1.5rem;
+}
+
+#titleSm {
+  font-size: 1rem;
+}
+
+#app-icon {
+  width: 150px;
+  height: 150px;
+  border-radius: 9999px;
+}
+
+#body-text {
+  font-size: 1.3rem;
+}
+
+#exit-button {
+  font-size: 1.3rem;
+  width: 300px;
+  height: 50px;
+  border: 2px solid var(--bdr);
+  border-radius: 20px;
+  background-color: var(--bg);
+  text-shadow: 1px 1px var(--shadow);
+  box-shadow: 2px 2px var(--shadow);
+  scale: 1;
+}
+
+#exit-button:hover {
+  transition: scale 0.3s ease-out, background-color 0.3s ease-out, color 0.3s ease-out, font-size 0.3s ease-out, text-shadow 0.3s ease-out, box-shadow 0.3s ease-out;
+  scale: 1.1;
+  background-color: var(--shadow);
+  color: var(--bg2);
+  font-size: 1.5rem;
+  text-shadow: 1px 1px black;
+  box-shadow: 2px 2px black;
+}

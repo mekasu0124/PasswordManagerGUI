@@ -1,5 +1,10 @@
+
+
+
 export default function Home() {
   return (
-    <div className="">Home</div>
+    <div className="flex flex-col items-center w-full flex-1">
+      
+    </div>
   );
 };

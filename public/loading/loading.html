@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/app-icon.jpeg" />
+    <link rel="stylesheet" href="./loading.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap" rel="stylesheet">
+    <title>&copy;Password Manager</title>
+  </head>
+  <body>
+    <!-- title container -->
+     <header>
+      <div class="left">
+        <h1 id="title" class="crafty-girls-regular">
+          Mek&#39;s Hub
+        </h1>  
+      </div>
+
+      <div class="middle">
+        <h3 id="titleSm" class="crafty-girls-regular">
+          Presents
+        </h3>
+      </div>
+
+      <div class="right">
+        <h1 id="title" class="crafty-girls-regular">
+          Password Manager
+        </h1>
+      </div>
+     </header>
+
+    <!-- body container -->
+     <main>
+      <div class="app-image">
+        <img 
+          src="../images/app-icon.jpeg" 
+          alt="The Diary Icon" 
+          id="app-icon" />
+      </div>
+
+      <div class="body-container">
+        <p id="body-text" class="crafty-girls-regular">
+          Loading Application... Please Wait...
+        </p>
+      </div>
+
+      <div class="exit-container">
+        <button id="exit-button" class="crafty-girls-regular">Cancel</button>
+      </div>
+     </main>
+
+     <script>
+      const { ipcRenderer } = require('electron');
+
+      document.getElementById('exit-button').addEventListener(
+        'click', () => {
+          ipcRenderer.send('exit-app');
+        }
+      );
+     </script>
+  </body>
+</html>
