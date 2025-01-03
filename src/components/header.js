@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
-import { Link } from "react-router-dom";
 import { useAuth } from '../hooks/authContext';
+
+import Navbar from './navbar';
 
 
 export default function Header() {
@@ -34,46 +35,7 @@ export default function Header() {
           </div>
         </div>
 
-        <div className="flex flex-row items-center justify-center w-full">
-          <div className="flex flex-row items-center justify-start w-full">
-            <Link
-              to="/"
-              className="font-craftyGirls italic text-fg text-base hover:underline mr-3 ml-3">
-                
-              Home
-            </Link>
-
-            <Link
-              to="/"
-              className="font-craftyGirls italic text-fg text-base hover:underline mr-3 ml-3">
-                
-              Login
-            </Link>
-
-            <Link
-              to="/"
-              className="font-craftyGirls italic text-fg text-base hover:underline mr-3 ml-3">
-                
-              Sign Up
-            </Link>
-          </div>
-
-          <div className="flex flex-row items-end justify-end w-full">
-            <Link
-              to="/"
-              className="font-craftyGirls italic text-fg text-base hover:underline mr-3 ml-3">
-                
-              About
-            </Link>
-
-            <Link
-              to="/"
-              className="font-craftyGirls italic text-fg text-base hover:underline mr-3 ml-3">
-                
-              Support
-            </Link>
-          </div>
-        </div>
+        <Navbar />
       </div>
     </div>
   );
