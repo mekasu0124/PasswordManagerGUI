@@ -30,7 +30,7 @@ export default function Header() {
 
           <div className="flex flex-col items-center justify-center w-full">
             <h1 className="font-craftyGirls font-bold italic text-fg text-2xl pt-3">
-              { currentUser && currentUser.username ? currentUser.username : "Password Manager" }
+              { currentUser && currentUser.username ? currentUser.username : null }
             </h1>
           </div>
         </div>
