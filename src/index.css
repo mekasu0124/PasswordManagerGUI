@@ -31,6 +31,35 @@ body {
   );
 }
 
+/* Style the entire scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the vertical scrollbar */
+  height: 12px; /* Height of the horizontal scrollbar */
+}
+
+/* Style the scrollbar track (background) */
+::-webkit-scrollbar-track {
+  background: var(--bg); /* Light gray background */
+}
+
+/* Style the scrollbar thumb (scroll handle) */
+::-webkit-scrollbar-thumb {
+  background: var(--bg2); /* Dark gray color */
+  border-radius: 6px; /* Rounded corners */
+  border: 2px solid var(--bdr); /* Adds a border for a more defined thumb */
+}
+
+/* Style the scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--hvr); /* Darker gray when hovered */
+}
+
+/* Optional: Style the scrollbar corners (only visible if both scrollbars are present) */
+::-webkit-scrollbar-corner {
+  background: var(--bg);
+}
+
+
 .boxShadow {
   box-shadow: 4px 4px rgb(0,0,0,0.3);
 }
